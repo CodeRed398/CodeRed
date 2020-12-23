@@ -1,2 +1,0 @@
-# CodeRed
-First Gaming Project
