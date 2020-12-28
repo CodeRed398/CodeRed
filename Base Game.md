@@ -48,13 +48,39 @@ def TheWaking():
         print("      ___________________________________________________________________________________               ")
         print("                                                                                                                                                                          ")
         print("     175 PTUs--| Tight Fitted Shirt  ---  Black Leather Studded --- Tight Cyberthreads --- Elite Bouncer Shoes ---          ")
-        print("                                                                                                                                                                          ")
+        print("     200 PTUs--| 80's Dress Shirt --- Armored Jacket --- Ripped Long Jeans --- Heavy Weight Training Shoes ---            ")
+        clothchoice=
+
         
         
     if brands==("B"):
-        end
+        for i in range(80):
+            print ("   ")
+        print("NIGHT CLOAK ----------- NIGHT CLOAK | NIGHT CLOAK ----------- NIGHT CLOAK | NIGHT CLOAK ----------- NIGHT CLOAK")
+        print("                                                                                                                                                                         ")
+        print("                           Clothing made for the most rouge personas, thieves, or your shady GMN dealer                             ")
+        print("                                                                                                                                                                          ")
+        print("                           Shirt                Jacket             Jean            Shoe              Accesories                                            ")
+        print("      ___________________________________________________________________________________               ")
+        print("                                                                                                                                                                          ")
+        print("     175 PTUs--| Pocketed Black Tech  --- Screen Intercepting Cloak --- Pocketed Sweats --- Smooth Slider Shoes ---    ")
+        print("     200 PTUs--| White Plated Shirt --- Fancy Blue Jeans --- Trace Reducing Boots ---                                                 ")
+
+
+        
     if brands==("C"):
-        end
+       for i in range(80):
+            print ("   ")
+        print("ETHER LIGHTS ----------- ETHER LIGHTS | ETHER LIGHTS ----------- ETHER LIGHTS | ETHER LIGHTS ----------- ETHER LIGHTS")
+        print("                                                                                                                                                                          ")
+        print("                           Clothing made for the most flashy personas, celeberities, or The Wanna Be's                                  ")
+        print("                                                                                                                                                                          ")
+        print("                           Shirt                Jacket             Jean            Shoe              Accesories                                            ")
+        print("      ___________________________________________________________________________________               ")
+        print("                                                                                                                                                                          ")
+        print("     175 PTUs--| Etherum Threaded Dress Shirt  --- Classic Over Coat --- Dress Jeans --- Hover Etherum Powered Slides --- ")
+        print("     200 PTUs--| White Etherum Laced Dancer Shirt --- Fancy White Jeans --- Gold Rimmed Shoes --- Flashy Gold Chain --- ")
+        
 
 
 
