@@ -3,12 +3,17 @@
 # Imports                                           #
 import time
 
+# Screen Tools #
+def ClearLED():
+    for i in range(90):
+        print("         ")
 # Intro #
 def IntoGame():
     print("CodeRed...")
     print("This is 3015, November")
     print("Im Maverickson a part time developer in the prestige Global Mixer Network or, GMN 2000.")
     Dialouge1()
+
 # Choices Begin Here #
 def Dialouge1():
     GMNQ1=input(" A: What is the GMN? \n B: What is a Gobal Mixer Network? \n C: Who am I? \n D: Whats Next? \n")
@@ -29,6 +34,8 @@ def Dialouge1():
         Dialouge1()
     if GMNQ1==("D"):
         input("Press Enter....")
+        TheWaking()
+    if GMNQ1==(" "):
         TheWaking()
         
 #  The Waking  #
@@ -89,11 +96,13 @@ def TheWaking():
         print("                                                                                                                                                                          ")
         print("     175 PTUs--| Etherum Threaded Dress Shirt  --- Classic Over Coat --- Dress Jeans --- Hover Etherum Powered Slides --- ")
         print("     200 PTUs--| White Etherum Laced Dancer Shirt --- Fancy White Jeans --- Gold Rimmed Shoes --- Flashy Gold Chain --- ")
-        clothchoice=input("Would you like this clothing brand?\n [Yes]\n [No]")
+        clothchoice=input("Would you like this clothing brand?\n [Yes]\n [No]\n   ")
         if clothchoice == ("Yes"):
             Brands.append("EtherLights")
             MentalSync()
         else:
+            TheWaking()
+        if clothchoice==(" "):
             TheWaking()
 
 # Mental Sync #
@@ -133,16 +142,43 @@ def MentalSync():
 
 # World 1 ---- Helgar ---- #
 def World1():
-    print(" The skimming skies of Helgar feel your breath and your lungs. \n You step toe to a new in which cells of your physical body take on currency. \n Your first life may be right here or waiting for you in a dark corner of a bar... \n")
-    
+    print(" The skimming skies of Helgar feel your breath and your lungs. \n You step toe to a new world in which cells of your physical body take on currency. \n Your first life may be right here or waiting for you in a dark corner of a bar... \n")
+    time.sleep(5)
+    ClearLED()
+# World 1 ---- Apartment 273 #
+def Apartment273():
+    print("The steel handlebars of almost captitude hold you prison to your now new building of life. \n You feel a tingle strife in your blood stream and your fingers click mechanically to the metal tapping softly.\n A TV buzzes static and fills your brain with only the sound. ")
+    print("Cars pass below and people yell and fight. \n Gun shots in the distant tell you this new world is not the safest of an area and a bright LED screen blazes through the night \n showing loud advertisments for NERU enhancements.")
+    EyeDis=input("Choose what to do... \n \n \n Actions: \n Jump \n Turn TV \n Study Streets \n Leave Apartment")
 
+    if EyeDis==("Jump"):
+        ClearLED()
+        print("Wow your a retard huh? okay! I mean I did give you a choice")
+        exit
+    if EyeDis==("Turn TV"):
+        ClearLED()
+        print("You switch to a clear station on NERU enhancers. \n The quality is low and static stills seeps into the channel...")
+        time.sleep(5)
+        ClearLED()
+        Apartment273()
+    if EyeDis==("Study Streets"):
+        
+    if EyeDis==("Leave Apartment"):
+            
 
 
     
 
 #Knowledge Tables#
+#GMN is the Global Mixer Network#
 knowGMN = []
+#Brands as in clothing knowledge#
 Brands = []
-#PTUs Scale#
+#Apartment and Helgar #
+Cultural = []
+
+
+#CURRENCY#
+#PTUs Scale, PTUs is in game currency#
 PTU = 500
 IntoGame()
