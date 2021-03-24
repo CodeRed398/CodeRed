@@ -62,8 +62,7 @@ def TheWaking():
             Brands.append("Cyberwares")
             MentalSync()
         else:
-            TheWaking()
-        
+            TheWaking()     
     if brands==("B"):
         for i in range(80):
             print ("   ")
@@ -82,8 +81,6 @@ def TheWaking():
             MentalSync()
         else:
             TheWaking()
-
-        
     if brands==("C"):
         for i in range(80):
             print ("   ")
@@ -102,9 +99,9 @@ def TheWaking():
             MentalSync()
         else:
             TheWaking()
-        if clothchoice==(" "):
+        if clothchoice==(""):
             TheWaking()
-
+            
 # Mental Sync #
 def MentalSync():
     for i in range(80):
@@ -150,7 +147,6 @@ def Apartment273():
     print("The steel handlebars of almost captitude hold you prison to your now new building of life. \n You feel a tingle strife in your blood stream and your fingers click mechanically to the metal tapping softly.\n A TV buzzes static and fills your brain with only the sound. ")
     print("Cars pass below and people yell and fight. \n Gun shots in the distant tell you this new world is not the safest of an area and a bright LED screen blazes through the night \n showing loud advertisments for NERU enhancements.")
     EyeDis=input("Choose what to do... \n \n \n Actions: \n Jump \n Turn TV \n Study Streets \n Leave Apartment")
-
     if EyeDis==("Jump"):
         ClearLED()
         print("Wow your a retard huh? okay! I mean I did give you a choice")
@@ -158,24 +154,79 @@ def Apartment273():
     if EyeDis==("Turn TV"):
         ClearLED()
         print("You switch to a clear station on NERU enhancers. \n The quality is low and static stills seeps into the channel...")
+        Cultural.append("Neru enhancers")
         time.sleep(5)
         ClearLED()
         Apartment273()
     if EyeDis==("Study Streets"):
-        
+        print("The hustles of busy feet and the roar of car engines bursts through the small city and seem to blaze away as fast as they come.")
+        time.sleep(5)
+        ClearLED()
+        print("You see a couple of beast looking men rustle into the alleyway violently and yelling, a loud shot is fired then silence for a second")
+        print("...")
+        print("......")
+        Cultural.append("Beast Fight")
+        time.sleep(5)
+        ClearLED()
+        Apartment273()
     if EyeDis==("Leave Apartment"):
-            
+        ClearLED()
+        print("Your open the door and its quick, the smell of dust and alcohol surround your face.")
+        print("A door is open and a small boy sits outside it as you hear yelling from the door.")
+        print("He's head down in his knees clearly hating his own life as well.")
+        People.append("Hall Boy")
+        time.sleep(10)
+        ClearLED()
+        Hallway()
+    if EyeDis==(""):
+        Apartment273()
 
-
+#HALLWAY Interaction#
+def Hallway():
+    Relations=input("What are you to do huh? \n Actions: \n Walk Past \n Kick Him \n Talk \n Go Back")
+    if Relations==(""):
+    if Relations==("Kick Him"):
+        ClearLED()
+        print("A man steps out eyes furious with rage and he grips your throat tight. \n You lungs grasp to a finale breathe before darkness")
+        time.sleep(10)
+        ClearLED()
+        print(".")
+        time.sleep(2)
+        print("..")
+        time.sleep(3)
+        print("...")
+        time.sleep(3)
+        print("........................................... PRINTING RECEIPT ........................................")
+        time.sleep(5)
+        print("........................................... REBOOTING ...... SUCCESS.................................")
+        time.sleep(5)
+        quit()
+    if Relations==("Talk"):
+        ClearLED()
+        print("He looks up as your mouth moves and you notice his mouth is displaced. \n Not odd, just gone with no cuts or rips.")
+    
+    if Relations==("Go Back"):
+        ClearLED()
+        Apartment273()    
+    if Relations==(""):
+        ClearLED()
+        Hallway()
+    
     
 
-#Knowledge Tables#
+#Knowledge Tables | Knowledge Tables | Knowledge Tables#
+
 #GMN is the Global Mixer Network#
 knowGMN = []
+
 #Brands as in clothing knowledge#
 Brands = []
+
 #Apartment and Helgar #
 Cultural = []
+
+#People #
+People = []
 
 
 #CURRENCY#
