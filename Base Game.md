@@ -3,18 +3,26 @@
 # Imports                                           #
 import time
 
+
+
 # Screen Tools #
 def ClearLED():
     for i in range(90):
         print("         ")
-# Intro #
+
+
+
+# Intro
 def IntoGame():
     print("CodeRed...")
     print("This is 3015, November")
     print("Im Maverickson a part time developer in the prestige Global Mixer Network or, GMN 2000.")
     Dialouge1()
 
-# Choices Begin Here #
+
+
+
+# Choices Begin Here
 def Dialouge1():
     GMNQ1=input(" A: What is the GMN? \n B: What is a Gobal Mixer Network? \n C: Who am I? \n D: Whats Next? \n")
     if GMNQ1==("A"):
@@ -38,7 +46,11 @@ def Dialouge1():
     if GMNQ1==(" "):
         TheWaking()
         
-#  The Waking  #
+        
+        
+        
+        
+#  The Waking
 def TheWaking():
     for i in range(80):
         print("             ")
@@ -102,7 +114,12 @@ def TheWaking():
         if clothchoice==(""):
             TheWaking()
             
-# Mental Sync #
+            
+            
+            
+            
+            
+# Mental Sync 
 def MentalSync():
     for i in range(80):
         print("    ")
@@ -137,11 +154,21 @@ def MentalSync():
     time.sleep(2)
     World1()
 
+
+
+
+
+
 # World 1 ---- Helgar ---- #
 def World1():
     print(" The skimming skies of Helgar feel your breath and your lungs. \n You step toe to a new world in which cells of your physical body take on currency. \n Your first life may be right here or waiting for you in a dark corner of a bar... \n")
     time.sleep(5)
     ClearLED()
+    Apartment273()
+    
+    
+    
+    
 # World 1 ---- Apartment 273 #
 def Apartment273():
     print("The steel handlebars of almost captitude hold you prison to your now new building of life. \n You feel a tingle strife in your blood stream and your fingers click mechanically to the metal tapping softly.\n A TV buzzes static and fills your brain with only the sound. ")
@@ -181,7 +208,11 @@ def Apartment273():
     if EyeDis==(""):
         Apartment273()
 
-#HALLWAY Interaction#
+
+
+
+
+# HALLWAY Interaction 
 def Hallway():
     Relations=input("What are you to do huh? \n Actions: \n Walk Past \n Kick Him \n Talk \n Go Back")
     if Relations==(""):
@@ -214,7 +245,11 @@ def Hallway():
     
     
 
-#Knowledge Tables | Knowledge Tables | Knowledge Tables#
+
+
+
+
+# Knowledge Tables | Knowledge Tables | Knowledge Tables
 
 #GMN is the Global Mixer Network#
 knowGMN = []
