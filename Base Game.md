@@ -43,8 +43,8 @@ def Dialouge1():
     if GMNQ1==("D"):
         input("Press Enter....")
         TheWaking()
-    if GMNQ1==(" "):
-        TheWaking()
+    else:
+        Dialouge1()
         
         
         
@@ -111,8 +111,7 @@ def TheWaking():
             MentalSync()
         else:
             TheWaking()
-        if clothchoice==(""):
-            TheWaking()
+        
             
             
             
@@ -205,7 +204,7 @@ def Apartment273():
         time.sleep(10)
         ClearLED()
         Hallway()
-    if EyeDis==(""):
+    else:
         Apartment273()
 
 
@@ -235,21 +234,54 @@ def Hallway():
     if Relations==("Talk"):
         ClearLED()
         print("He looks up as your mouth moves and you notice his mouth is displaced. \n Not odd, just gone with no cuts or rips.")
-    
+        time.sleep(3)
+        ClearLED()
+        print("Your eye atones to the image and his eyes adjust. \n Your seeing the effects of dangerously rejected neru-enhancer failures. \n Its not pretty...")
+        NeruK.append("Neru Failure")
+        time.sleep(5)
+        ClearLED()
+        Help=input("You gonna leave him there? \n Actions: \n Put Him Out Of His Misery \n Walk Away.")
+            if Help==("Put Him Out Of His Misery"):
+            time.sleep(5)
+            ClearLED()
+            print("You look for anything to 'Help' him, you cant see more than a knife busted and crooked. You grip it")
+            time.sleep(2)
+            ClearLED()
+            print("..........OPTICIS BOOTING.........")
+            time.sleep(3)
+            ClearLED()
+            print(".........OPTIC BOOT SUCCESS.......")
+            time.sleep(5)
+            ClearLED()
+            print("The knife rest deepened into the skull of the boy and blood spurts out. \n Your hands pulse with rythme and your fingers settle.")
+            People.remove("Hall Boy")
+            time.sleep(5)
+            ClearLED()
+            Hallway()
+            if Help==("Walk Away"):
+                print("You walk past and the hallway leaves you as you leave it.")
+                print("A staircase door presents to you and the creak of wind breaks the silence you feel.")
+                Stairs()
+            else:
+                Hallway()
     if Relations==("Go Back"):
         ClearLED()
         Apartment273()    
-    if Relations==(""):
+    else:
         ClearLED()
         Hallway()
+
+
+# Stairwell #
+def Stairs():
+    ClearLED()
+    print("Its silence still. \n The stairs are wood, somehow holding up.")
     
-    
 
 
 
 
-
-# Knowledge Tables | Knowledge Tables | Knowledge Tables
+# Knowledge Tables | Knowledge Tables | Knowledge Tables #
 
 #GMN is the Global Mixer Network#
 knowGMN = []
@@ -263,6 +295,8 @@ Cultural = []
 #People #
 People = []
 
+#Neru-enchancers#
+NeruK = []
 
 #CURRENCY#
 #PTUs Scale, PTUs is in game currency#
