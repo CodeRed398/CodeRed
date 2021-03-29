@@ -256,13 +256,29 @@ def Hallway():
             People.remove("Hall Boy")
             time.sleep(5)
             ClearLED()
-            Hallway()
+            HallwayNOBoy()
             if Help==("Walk Away"):
                 print("You walk past and the hallway leaves you as you leave it.")
                 print("A staircase door presents to you and the creak of wind breaks the silence you feel.")
                 Stairs()
             else:
                 Hallway()
+    if Relations==("Go Back"):
+        ClearLED()
+        Apartment273()    
+    else:
+        ClearLED()
+        Hallway()
+        
+# If You Kill The Boy #
+def HallwayNoBoy():
+    Relations=input("What are you to do huh? \n Actions: \n Walk \n Go Back \n \n :  ")
+    if Relations==("Walk"):
+        print("You walk past and the hallway leaves you as you leave it.")
+        print("A staircase door presents to you and the creak of wind breaks the silence you feel.")
+        Stairs()
+    else:
+        HallwayNoBoy()
     if Relations==("Go Back"):
         ClearLED()
         Apartment273()    
