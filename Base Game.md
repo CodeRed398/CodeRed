@@ -172,7 +172,7 @@ def World1():
 def Apartment273():
     print("The steel handlebars of almost captitude hold you prison to your now new building of life. \n You feel a tingle strife in your blood stream and your fingers click mechanically to the metal tapping softly.\n A TV buzzes static and fills your brain with only the sound. ")
     print("Cars pass below and people yell and fight. \n Gun shots in the distant tell you this new world is not the safest of an area and a bright LED screen blazes through the night \n showing loud advertisments for NERU enhancements.")
-    EyeDis=input("Choose what to do... \n \n \n Actions: \n Jump \n Turn TV \n Study Streets \n Leave Apartment")
+    EyeDis=input("Choose what to do... \n \n \n Actions: \n Jump \n Turn TV \n Study Streets \n Leave Apartment :   ")
     if EyeDis==("Jump"):
         ClearLED()
         print("Wow your a retard huh? okay! I mean I did give you a choice")
@@ -215,7 +215,7 @@ def Apartment273():
 
 # HALLWAY Interaction 
 def Hallway():
-    Relations=input("What are you to do huh? \n Actions: \n Walk Past \n Kick Him \n Talk \n Go Back")
+    Relations=input("What are you to do huh? \n Actions: \n Walk Past \n Kick Him \n Talk \n Go Back :   ")
     if Relations==("Kick Him"):
         ClearLED()
         print("A man steps out eyes furious with rage and he grips your throat tight. \n You lungs grasp to a finale breathe before darkness")
@@ -241,7 +241,7 @@ def Hallway():
         NeruK.append("Neru Failure")
         time.sleep(5)
         ClearLED()
-        Help=input("You gonna leave him there? \n Actions: \n Put Him Out Of His Misery \n Walk Away.")
+        Help=input("You gonna leave him there? \n Actions: \n Put Him Out Of His Misery \n Walk Away :   ")
         if Help==("Put Him Out Of His Misery"):
             time.sleep(5)
             ClearLED()
@@ -258,7 +258,7 @@ def Hallway():
             People.remove("Hall Boy")
             time.sleep(5)
             ClearLED()
-            HallwayNOBoy()
+            HallwayNoBoy()
         if Help==("Walk Away"):
             print("You walk past and the hallway leaves you as you leave it.")
             print("A staircase door presents to you and the creak of wind breaks the silence you feel.")
@@ -274,19 +274,17 @@ def Hallway():
         
 # If You Kill The Boy #
 def HallwayNoBoy():
-    Relations=input("What are you to do huh? \n Actions: \n Walk \n Go Back \n \n :  ")
-    if Relations==("Walk"):
+    RelationsN=input("What are you to do huh? \n Actions: \n Walk \n Go Back \n \n :  ")
+    if RelationsN==("Walk"):
         print("You walk past and the hallway leaves you as you leave it.")
         print("A staircase door presents to you and the creak of wind breaks the silence you feel.")
         Stairs()
+    if RelationsN==("Go Back"):
+        ClearLED()
+        Apartment273()
     else:
         HallwayNoBoy()
-    if Relations==("Go Back"):
-        ClearLED()
-        Apartment273()    
-    else:
-        ClearLED()
-        HallwayNoBoy()
+
 
 
 # Stairwell #
