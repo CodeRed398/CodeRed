@@ -1,5 +1,5 @@
-# CodeRed                                          #
-# First Classic Text Gaming Project       #
+# CodeRed                                           #
+# First Classic Text Gaming Project                 #
 # Imports                                           #
 import time
 
@@ -214,7 +214,6 @@ def Apartment273():
 # HALLWAY Interaction 
 def Hallway():
     Relations=input("What are you to do huh? \n Actions: \n Walk Past \n Kick Him \n Talk \n Go Back")
-    if Relations==(""):
     if Relations==("Kick Him"):
         ClearLED()
         print("A man steps out eyes furious with rage and he grips your throat tight. \n You lungs grasp to a finale breathe before darkness")
@@ -241,7 +240,7 @@ def Hallway():
         time.sleep(5)
         ClearLED()
         Help=input("You gonna leave him there? \n Actions: \n Put Him Out Of His Misery \n Walk Away.")
-            if Help==("Put Him Out Of His Misery"):
+        if Help==("Put Him Out Of His Misery"):
             time.sleep(5)
             ClearLED()
             print("You look for anything to 'Help' him, you cant see more than a knife busted and crooked. You grip it")
