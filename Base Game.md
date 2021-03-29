@@ -200,10 +200,12 @@ def Apartment273():
         print("Your open the door and its quick, the smell of dust and alcohol surround your face.")
         print("A door is open and a small boy sits outside it as you hear yelling from the door.")
         print("He's head down in his knees clearly hating his own life as well.")
-        People.append("Hall Boy")
         time.sleep(10)
         ClearLED()
-        Hallway()
+        if "Hall Boy" in People:
+            Hallway()
+        else:
+            HallwayNoBoy()
     else:
         Apartment273()
 
@@ -257,12 +259,12 @@ def Hallway():
             time.sleep(5)
             ClearLED()
             HallwayNOBoy()
-            if Help==("Walk Away"):
-                print("You walk past and the hallway leaves you as you leave it.")
-                print("A staircase door presents to you and the creak of wind breaks the silence you feel.")
-                Stairs()
-            else:
-                Hallway()
+        if Help==("Walk Away"):
+            print("You walk past and the hallway leaves you as you leave it.")
+            print("A staircase door presents to you and the creak of wind breaks the silence you feel.")
+            Stairs()
+        else:
+           Hallway()
     if Relations==("Go Back"):
         ClearLED()
         Apartment273()    
@@ -284,7 +286,7 @@ def HallwayNoBoy():
         Apartment273()    
     else:
         ClearLED()
-        Hallway()
+        HallwayNoBoy()
 
 
 # Stairwell #
@@ -308,7 +310,7 @@ Brands = []
 Cultural = []
 
 #People #
-People = []
+People = ["Hall Boy"]
 
 #Neru-enchancers#
 NeruK = []
