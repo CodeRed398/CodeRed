@@ -291,8 +291,34 @@ def HallwayNoBoy():
 def Stairs():
     ClearLED()
     print("Its silence still. \n The stairs are wood, somehow holding up.")
+    print("You walk your way down the set of stairs and find another door.")
+    time.sleep(5)
+    ClearLED()
+    print("A sign next to the door states exit. \n You push the door and a bright gleeming light of the sun hits you.")
+    print("A few people bustle back and forth around this small alleyway exit...")
+    time.sleep(3)
+    AWay=input("Actions: \n Walk Right \n Walk Left \n Prop Against The Wall :   "):
+        if AWay==("Walk Right")
+            ClearLED()
+            time.sleep(2)
+            print("You take a right and meet a alley of Vending Machines and food")
+            time.sleep(5)
+            VM=input("Take A Look? Actions: \n Yes \n No :   "):
+                if VM==("Yes")
+                    ClearLED()
+                    VendingMachines()
+                if VM==("No")
+                    ClearLED()
+                    Stairs()
+        if AWay==("Walk Left")
+            
+        else:
+            ClearLED()
+            Stairs()
+def VendingMachines():
+    print("They line you up and list items of all sorts.")
+    print("Sodas, Neruenhancer Sprays, Mechanical Part, and Small Foods and Snacks")
     
-
 
 
 
