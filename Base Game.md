@@ -345,8 +345,34 @@ def Streets():
 def VendingMachines():
     print("They line you up and list items of all sorts.")
     print("Sodas, Neruenhancer Sprays, Mechanical Part, and Small Foods and Snacks")
-    
-
+    VendCH=input("Actions: \n Buy Soda \n Buy Neru-enhancer Spray \n Buy Mechanical Part \n Buy Food \n Back :   "):
+        if VendCH==("Buy Soda"):
+            ClearLED()
+            print(" ...       Soda Receipt          ... ")
+            print("                                     ")
+            print(" ...        PTUS -- 25           ... ")
+            PTU = PTU - 25
+            print(" ... Remaining Balance " PTU "'s ... ")
+            print("                                     ")
+            print(" ...       Soda Receipt          ... ")
+            Food.append("Soda")
+            time.sleep(3)
+            ClearLED()
+            VendingMachines()
+        if VendCH==("Buy Neru-enhancer Spray"):
+            ClearLED()
+            print(" ... Neru-enhancer Spray Reciept ... ")
+            print("                                     ")
+            print(" ...        PTUS -- 175          ... ")
+            PTU = PTU - 175
+            print(" ... Remaining Balance " PTU "'s ... ")
+            print("                                     ")
+            print(" ... Neru-enhancer Spray Reciept ... ")
+            Esc.append("Neur-Enhancer Spray")
+            time.sleep(3)
+            ClearLED()
+            VendingMachines()
+            
 
 
 # Knowledge Tables | Knowledge Tables | Knowledge Tables #
@@ -357,16 +383,26 @@ knowGMN = []
 #Brands as in clothing knowledge#
 Brands = []
 
-#Apartment and Helgar #
+#Apartment and Helgar#
 Cultural = []
 
-#People #
+#People#
 People = ["Hall Boy"]
 
 #Neru-enchancers#
 NeruK = []
 
 #CURRENCY#
-#PTUs Scale, PTUs is in game currency#
+# PTUs Scale, PTUs is in game currency#
 PTU = 500
+
+# Inventory #
+Food = []
+Esc = []
+Weapons = []
+Clothes = []
+Accesories = []
+Quest_Items = []
+
+# Game Beginner #
 IntoGame()
