@@ -297,26 +297,26 @@ def Stairs():
     print("A sign next to the door states exit. \n You push the door and a bright gleeming light of the sun hits you.")
     print("A few people bustle back and forth around this small alleyway exit...")
     time.sleep(3)
-    AWay=input("Actions: \n Walk Right \n Walk Left \n Prop Against The Wall :   "):
-        if AWay==("Walk Right")
+    AWay=input("Actions: \n Walk Right \n Walk Left \n Prop Against The Wall :   ")
+    if AWay==("Walk Right"):
+        ClearLED()
+        time.sleep(2)
+        print("You take a right and meet a alley of Vending Machines and food")
+        time.sleep(5)
+        VM=input("Take A Look? Actions: \n Yes \n No :   ")
+        if VM==("Yes"):
             ClearLED()
-            time.sleep(2)
-            print("You take a right and meet a alley of Vending Machines and food")
-            time.sleep(5)
-            VM=input("Take A Look? Actions: \n Yes \n No :   "):
-                if VM==("Yes")
-                    ClearLED()
-                    VendingMachines()
-                if VM==("No")
-                    ClearLED()
-                    Stairs()
-        if AWay==("Walk Left")
+            VendingMachines()
+        if VM==("No"):
+                ClearLED()
+                Stairs()    
+        if AWay==("Walk Left"):
             ClearLED()
             print("The Pavemnet road meets your feet and you rushes of people crowd as they pass you.")
             print("Cars drive past some blazing by and some slowly scooting by. \n Those same cars contain people peering out the windows and looking for something")
             time.sleep(8)
             Streets()
-        if AWay==("Prop Against The Wall")
+        if AWay==("Prop Against The Wall"):
             ClearLED()
             print("Your back props up and time passes by \n people as well.")
             time.sleep(3)
@@ -345,33 +345,33 @@ def Streets():
 def VendingMachines():
     print("They line you up and list items of all sorts.")
     print("Sodas, Neruenhancer Sprays, Mechanical Part, and Small Foods and Snacks")
-    VendCH=input("Actions: \n Buy Soda \n Buy Neru-enhancer Spray \n Buy Mechanical Part \n Buy Food \n Back :   "):
-        if VendCH==("Buy Soda"):
-            ClearLED()
-            print(" ...       Soda Receipt          ... ")
-            print("                                     ")
-            print(" ...        PTUS -- 25           ... ")
-            PTU = PTU - 25
-            print(" ... Remaining Balance " PTU "'s ... ")
-            print("                                     ")
-            print(" ...       Soda Receipt          ... ")
-            Food.append("Soda")
-            time.sleep(3)
-            ClearLED()
-            VendingMachines()
-        if VendCH==("Buy Neru-enhancer Spray"):
-            ClearLED()
-            print(" ... Neru-enhancer Spray Reciept ... ")
-            print("                                     ")
-            print(" ...        PTUS -- 175          ... ")
-            PTU = PTU - 175
-            print(" ... Remaining Balance " PTU "'s ... ")
-            print("                                     ")
-            print(" ... Neru-enhancer Spray Reciept ... ")
-            Esc.append("Neur-Enhancer Spray")
-            time.sleep(3)
-            ClearLED()
-            VendingMachines()
+    VendCH=input("Actions: \n Buy Soda \n Buy Neru-enhancer Spray \n Buy Mechanical Part \n Buy Food \n Back :   ")
+    if VendCH==("Buy Soda"):
+        ClearLED()
+        print(" ...       Soda Receipt          ... ")
+        print("                                     ")
+        print(" ...        PTUS -- 25           ... ")
+        PTU = PTU - 25
+        print(" ... Remaining Balance " + PTU + "'s ... ")
+        print("                                     ")
+        print(" ...       Soda Receipt          ... ")
+        Food.append("Soda")
+        time.sleep(3)
+        ClearLED()
+        VendingMachines()
+    if VendCH==("Buy Neru-enhancer Spray"):
+        ClearLED()
+        print(" ... Neru-enhancer Spray Reciept ... ")
+        print("                                     ")
+        print(" ...        PTUS -- 175          ... ")
+        PTU = PTU - 175
+        print(" ... Remaining Balance " + PTU + "'s ... ")
+        print("                                     ")
+        print(" ... Neru-enhancer Spray Reciept ... ")
+        Esc.append("Neur-Enhancer Spray")
+        time.sleep(3)
+        ClearLED()
+        VendingMachines()
             
 
 
